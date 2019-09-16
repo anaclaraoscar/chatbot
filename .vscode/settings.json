@@ -1,0 +1,10 @@
+{
+    "python.pythonPath": "C:\\Users\\GS\\AppData\\Local\\Programs\\Python\\Python37\\python.exe",
+    "python.testing.pytestArgs": [
+        "Chatbot"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.nosetestsEnabled": false,
+    "python.testing.pytestEnabled": true,
+    "python.formatting.provider": "black"
+}
