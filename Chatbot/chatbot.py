@@ -4,12 +4,12 @@ from chatterbot.trainers import ListTrainer
 # read_only: True  if you want to disable the bot’s ability to learn after the training (i.e. from actual conversations)
 # enables the bot to solve math problems
 # chooses the best match from already provided responses
-my_bot = ChatBot(name='PyBot', read_only=True,
+chatbot = ChatBot('PyBot', read_only=False,
                  logic_adapters=['chatterbot.logic.MathematicalEvaluation',
                                  'chatterbot.logic.BestMatch'])
 
 # we can create and train the bot by creating an instance of ListTrainer and supplying it with the lists of strings
-list_trainer = ListTrainer(my_bot)
+list_trainer = ListTrainer(chatbot)
 
 small_talk = ['hi there!',
               'hi!',
@@ -38,4 +38,4 @@ math_talk_2 = ['law of cosines',
 for item in (small_talk, math_talk_1, math_talk_2):
     list_trainer.train(item)
 
-print(my_bot.get_response('what\'s your name?'))
+# print(my_bot.get_response('what\'s your name?'))
