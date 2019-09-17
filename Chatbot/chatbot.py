@@ -38,4 +38,4 @@ math_talk_2 = ['law of cosines',
 for item in (small_talk, math_talk_1, math_talk_2):
     list_trainer.train(item)
 
-print(my_bot.getresponse('what\'s your name?'))
+print(my_bot.get_response('what\'s your name?'))
