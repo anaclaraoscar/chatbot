@@ -1,7 +1,5 @@
-from chatterbot import ChatBot
+from chatbot import bot
 from chatterbot.trainers import ListTrainer
-
-bot = ChatBot("Leroy Jenkins")
 
 conversation = [
     "Hello",
@@ -17,5 +15,10 @@ trainer = ListTrainer(bot)
 
 trainer.train(conversation)
 
-response = bot.get_response("Good morning!")
-print(response)
+while True:
+    try:
+        bot_input = bot.get_response(input())
+        print(bot_input)
+
+    except(KeyboardInterrupt, EOFError, SystemExit):
+        break
