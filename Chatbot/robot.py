@@ -9,12 +9,12 @@ robot = ChatBot('HAL9000', logic_adapters=[
 # conversa = ['Oi', 'Olá', 'Tudo bem?', 'Tudo ótimo', 'Você gosta de programar?', 'Sim, eu programo em Python', 'Você me entende, HAL?', 'Sim, Dave.', 'Qual o problema, HAL?', 'Acredito que você saiba qual o problema tão bem quanto eu.']
 
 trainer = ChatterBotCorpusTrainer(robot)
-trainer.train('chatterbot.corpus.english', 'chatterbot.corpus.Portuguese')
+trainer.train('chatterbot.corpus.english', 'chatterbot.corpus.portuguese')
 
 while True:
-    pergunta = input("User: ")
+    pergunta = input('User: ')
     resposta = robot.get_response(pergunta)
     if float(resposta.confidence) > 0.5:
         print('HAL9000: ', resposta)
     else:
-        print('HAL9000: Desculpe, Dave. Receio que não posso deixar que isso aconteça.')
+        print('HAL9000: Dave, this conversation can serve no purpose anymore. Goodbye.')
