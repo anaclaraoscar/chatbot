@@ -9,7 +9,7 @@ robot = ChatBot('HAL9000', logic_adapters=[
 # conversa = ['Oi', 'Olá', 'Tudo bem?', 'Tudo ótimo', 'Você gosta de programar?', 'Sim, eu programo em Python', 'Você me entende, HAL?', 'Sim, Dave.', 'Qual o problema, HAL?', 'Acredito que você saiba qual o problema tão bem quanto eu.']
 
 trainer = ChatterBotCorpusTrainer(robot)
-trainer.train('chatterbot.corpus.english', 'chatterbot.corpus.portuguese')
+trainer.train('chatterbot.corpus.english', 'chatterbot.corpus.portuguese', 'chatterbot.corpus.custom.HAL')
 
 while True:
     pergunta = input('User: ')
