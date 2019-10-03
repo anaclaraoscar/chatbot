@@ -20,11 +20,11 @@ while True:
         try:
             print('HAL9000: Ok. What is the topic?')
             topic = input('Topic: ')
-            wiki = wikipedia.search(topic, results=1, suggestion=True)
-            wikipedia.content(wiki)
-            print('HAL9000: Here is your search: ', wiki)
-            # wikipedia.content(wiki)
+            wiki = wikipedia.search(topic)
+            print('HAL9000: Here is your search: ', wiki[0])
+            # wikipedia.page(topic, preload=true)
         except:
             print('HAL9000: Sorry, I cannot find your search')
     else:
         print('HAL9000: Dave, this conversation can serve no purpose anymore. Goodbye.')
+
