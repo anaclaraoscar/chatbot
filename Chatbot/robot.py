@@ -21,6 +21,7 @@ while True:
             print('HAL9000: Ok. What is the topic?')
             topic = input('Topic: ')
             wiki = wikipedia.search(topic, results=1, suggestion=True)
+            wikipedia.content(wiki)
             print('HAL9000: Here is your search: ', wiki)
             # wikipedia.content(wiki)
         except:
