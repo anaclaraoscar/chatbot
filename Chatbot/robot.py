@@ -20,9 +20,8 @@ while True:
         try:
             print('HAL9000: Ok. What is the topic?')
             topic = input('Topic: ')
-            wiki = wikipedia.search(topic)
+            wiki = wikipedia.summary(topic)
             print('HAL9000: Here is your search: ', wiki)
-            # wikipedia.page(topic, preload=true)
         except:
             print('HAL9000: Sorry, I cannot find your search')
     else:
