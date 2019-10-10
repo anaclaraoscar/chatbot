@@ -25,5 +25,5 @@ while True:
         except:
             print('HAL9000: Sorry, I cannot find your search')
     else:
-        print('HAL9000: Dave, this conversation can serve no purpose anymore. Goodbye.')
+        print('HAL9000: This conversation can serve no purpose anymore. Goodbye.')
 
